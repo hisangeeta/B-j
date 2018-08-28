@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- custome-css -->
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <!-- google font -->
+    <link href="https://fonts.googleapis.com/css?family=Sawarabi+Gothic" rel="stylesheet">
+    <!-- script source -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js">
+    </script>
+    <title>Hello, world!</title>
+    <style>
+        body,
+        html,
+        p,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        span,
+        li,
+        ul,
+        a,
+        div {
+            padding: 0;
+            margin-right: 0;
+            font-family: 'Sawarabi Gothic', sans-serif;
+        }
+        
+        .container {
+            max-width: 1170px;
+        }
+        
+        .custom-nav {
+            background: #222;
+            list-style: none;
+            padding: 25px 0;
+        }
+        
+        .custom-nav li {
+            display: inline-block;
+            margin-left: 24px;
+            vertical-align: middle;
+        }
+        
+        .custom-nav li a:hover {
+            color: #38b2e8;
+        }
+        
+        .custom-nav li a:active {
+            color: #38b2e8;
+        }
+        
+        .custom-nav ul {
+            list-style: none;
+            margin-bottom: 0;
+            float: left;
+        }
+        
+        .left-nav li a {
+            font-weight: bold;
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 1.6px;
+            font-size: 1.11rem;
+            transition: color .3s ease;
+        }
+        
+        .social-icon li {
+            height: 30px;
+            width: 30px;
+            border-radius: 50%;
+            background: #fff;
+            text-align: center;
+            padding-top: 6px;
+            margin: 0;
+            transition: backgroun-color .3s ease;
+        }
+        
+        .social-icon li:hover {
+            background: #38b2e8;
+        }
+        
+        .social-icon i {
+            color: #222;
+            display: block;
+        }
+        
+        .social-icon a {
+            text-decoration: none;
+        }
+        
+        .right-nav {
+            margin-left: 100px;
+        }
+        
+        .mt-rt {
+            padding-right: 0;
+        }
+        
+        .mt-lt {
+            padding-left: 0;
+        }
+        
+        .right-nav button#review-btn {
+            margin-left: 30px;
+            border: none;
+            border-radius: -7%;
+            padding: 4px 10px;
+            border-radius: 18px;
+            border: 1px solid;
+            border: 1px solid #ed7565;
+            color: white;
+            background-color: #e95643;
+            border: 1px solid #ed7565;
+            border-top: 1px solid #f5b2aa;
+            border-bottom: 1px solid #e53721;
+            font-size: 18px;
+            font-family: bold;
+            text-transform: uppercase;
+            margin: 0 27px;
+            float: right;
+            line-height: 27px;
+            transition: .3s ease;
+        }
+        
+        button#review-btn:hover {
+            color: white;
+            background-color: #e6412c;
+            border: 1px solid #b12715;
+            border-color: #e6412c;
+        }
+        
+        .clear {
+            clear: both;
+        }
+        
+        .custom-nav i.fa.fa-bars {
+            display: none;
+        }
+        
+        .custom-nav .close {
+            display: none;
+            float: left;
+        }
+        /* a.close {
+            position: absolute;
+            top: 25;
+            top: 16px;
+            left: 10px;
+        } */
+        
+        .offcanvas-menu {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #111;
+            overflow-x: hidden;
+            transition: 0.5s;
+        }
+        
+        .offcanvas-menu a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #818181;
+            display: block;
+            transition: 0.3s;
+        }
+        
+        .body-content {
+            transition: 0.5s;
+        }
+        /* @media screen and (max-width: 600px) {
+            .custom-nav.responsive {
+                position: relative;
+            }
+            .custom-nav.responsive i.fa.fa-bars {
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+            .custom-nav.responsive li a {
+                float: none;
+                display: block;
+                text-align: left;
+            }
+        } */
+        
+        @media screen and (max-width: 600px) {
+            .custom-nav i.fa.fa-bars {
+                float: left;
+                display: block;
+            }
+            .left-nav ul {
+                display: none;
+            }
+            .custom-nav .close {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="offcanvas-menu">
+        <ul>
+            <li><a href="#"> home </a></li>
+            <li><a href="#"> About</a> </li>
+            <li><a href="#"> Services</a> </li>
+            <li><a href="#"> Learning Center</a> </li>
+            <li><a href="#"> Product</a> </li>
+            <li><a href="#"> contact</a> </li>
+
+        </ul>
+    </div>
+    <div class="body-content">
+        <div class="custom-nav">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 mt-lt mt-rt">
+                        <div class="left-nav">
+                            <div class="icon-menu">
+                                <a href="javascript:void(0);" class="icon">
+                                    <i class="fa fa-bars"></i>
+                                </a>
+                                <a href="javascript:void(0);" class="close">
+                                    x
+                                </a>
+                            </div>
+                            <ul>
+                                <li><a href="#"> home </a></li>
+                                <li><a href="#"> About</a> </li>
+                                <li><a href="#"> Services</a> </li>
+                                <li><a href="#"> Learning Center</a> </li>
+                                <li><a href="#"> Product</a> </li>
+                                <li><a href="#"> contact</a> </li>
+
+                            </ul>
+                        </div>
+
+                    </div>
+                    <!-- <div class="col-md-8 mt-lt mt-rt">
+                    <div class="left-colapse-button">
+                        <div class="w3-main" style="margin-right:200px">
+                            <div class="w3-teal">
+                                <button class="w3-button w3-teal w3-xlarge w3-right w3-hide-large" onclick="w3_open()">&#9776;</button>
+                                <div class="w3-container">
+                                    <h1>My Page</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+
+                    <div class="col-md-4 mt-lt mt-rt">
+                        <div class="right-nav">
+                            <ul class="social-icon">
+                                <li class="facebook">
+                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                </li>
+                                <li class="twitter">
+                                    <a href="#"> <i class="fab fa-twitter"></i></a>
+                                </li>
+                                <li class="gplus">
+                                    <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                                </li>
+                            </ul>
+                            <div class="review-btn">
+                                <button id="review-btn" class="btn" type="submit">review us</button>
+                            </div>
+
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script>
+        $(".icon").click(function() {
+
+            $(".offcanvas-menu").width(250);
+            $(".icon").hide();
+            $(".body-content").css("margin-left", "250px");
+            $(".close").show();
+
+        });
+        $(".close").click(function() {
+
+            $(".offcanvas-menu").width(0);
+            $(".body-content").css("margin-left", "0");
+            $(".close").hide();
+            $(".icon").show();
+        });
+    </script>
+
+</body>

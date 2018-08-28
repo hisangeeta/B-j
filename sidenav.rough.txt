@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- custome-css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <!-- google font -->
+    <link href="https://fonts.googleapis.com/css?family=Sawarabi+Gothic" rel="stylesheet">
+    <title>Hello, world!</title>
+</head>
+
+<body>
+    <div class="custom-nav">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 mt-lt mt-rt">
+                    <div class="left-nav">
+                        <ul>
+                            <li><a href="#"> home </a></li>
+                            <li><a href="#"> About</a> </li>
+                            <li><a href="#"> Services</a> </li>
+                            <li><a href="#"> Learning Center</a> </li>
+                            <li><a href="#"> Product</a> </li>
+                            <li><a href="#"> contact</a> </li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="col-md-4 mt-lt mt-rt">
+                    <div class="right-nav">
+                        <ul class="social-icon">
+                            <li class="facebook">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            </li>
+                            <li class="twitter">
+                                <a href="#"> <i class="fab fa-twitter"></i></a>
+                            </li>
+                            <li class="gplus">
+                                <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                            </li>
+                        </ul>
+                        <div class="review-btn">
+                            <button id="review-btn" class="btn" type="submit">review us</button>
+                        </div>
+
+                        <div class="clear"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
