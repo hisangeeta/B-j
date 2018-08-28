@@ -130,9 +130,12 @@
             font-family: bold;
             text-transform: uppercase;
             margin: 0 27px;
-            float: right;
             line-height: 27px;
             transition: .3s ease;
+        }
+        
+        .review-btn {
+            float: left;
         }
         
         button#review-btn:hover {
@@ -148,11 +151,22 @@
         
         .custom-nav i.fa.fa-bars {
             display: none;
+            font-size: 30px;
+            position: absolute;
+            left: 10px;
+            top: 2px;
+            z-index: 9999;
         }
         
         .custom-nav .close {
             display: none;
             float: left;
+            color: #fff;
+            font-size: 30px;
+            position: absolute;
+            left: 10px;
+            top: -5px;
+            z-index: 9999;
         }
         /* a.close {
             position: absolute;
@@ -184,6 +198,7 @@
         
         .body-content {
             transition: 0.5s;
+            width: 100%;
         }
         /* @media screen and (max-width: 600px) {
             .custom-nav.responsive {
@@ -241,6 +256,7 @@
                                 <a href="javascript:void(0);" class="close">
                                     x
                                 </a>
+                                <div class="clear"></div>
                             </div>
                             <ul>
                                 <li><a href="#"> home </a></li>
